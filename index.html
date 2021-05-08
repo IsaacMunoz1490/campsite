@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    <!-- Isaac A Munoz -->
     <head>
         <!-- meta tags comes first -->
     <meta charset="utf-8"/>
@@ -13,7 +14,7 @@
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 
 <title>Nucamp: A Better Way to Camp with Bootstrap</title>
 </head>
@@ -24,16 +25,21 @@
 <header class="jumbotron jumbotron-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-4-sm3 col-md-2 align-slef-center">
-                <a href="index.html"><img src="img/logo.png" class="image-fluid">
-            </div> 
-            <div class="col">
-                    <h1>NuCamp</h1>
+                <div class="col-4-sm col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="image-fluid">
+                </div>
+                <div class="col">
+                        <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
-            </div>
-        </div>    
+                </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                        <button class="btn btn-info btn-lg" type="submit" id="reserveForm" >Reserve Campsite</button>
+                </div>
+        </div>
     </div>
 </header>
+
+
 
 <!-- NavBar Completed -->
 <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -54,6 +60,7 @@
 </nav>
 
 <!-- end of navbar -->
+<!-- Task 2 -->
 <div class="container">
     <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
@@ -70,16 +77,23 @@
         </div>
     </div>          
 </div>
-
+<!-- This is the workshop task -->
 <div class="row row-content align-items-center">
-        <div class="col-sm-4 col-md-3">
-            <h2 class="text-sm-right">Features Campsiter</h2>
-        </div>
-            <div class="col-sm-4 col-md-3">    
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrime Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-            </div>
+                <div class="col-sm-4 col-md-3">
+                    <h2 class="text-sm-right">Features Campsiter</h2>
+                </div>
+    <div class="col">
+        <div class="media">
+                <div class="media-body align-self-center">
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrime Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                </div>    
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake"> 
+        </div>   
+    </div>
+
 </div>
+<!-- end of task 1 -->
 <div class="row row-content align-items-center">
         <div class="col-sm-4 col-md-3">
             <h2 class="text-sm-right">Our Community Partners</h2>
@@ -93,9 +107,50 @@
                         </div>
             </div>        
         </div>
+        <!-- Task 2 Beginning -->
+ 
 </div>
 
-    <footer class="site-footer">
+<div class="row row-content">
+    <div class="col-sm-6 mx-auto">
+        <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+                <form class="form" id="reserveForm">
+                    <div class="form-group row">
+                        <label for="numberGuest" class="col-sm-6 col-form-label">Number of Campers</label>
+                                    <div class="col-sm-6">
+                                        <select class="col-sm form-control" name="numcampers" id="numCampers">
+                                            <option>Select</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select>
+                                    </div>
+                    </div>
+                        <div class="form-group row">
+                        <label class="col-sm-6 col-form-label" for="date">Date</label>
+                        <div class="col-sm-6">
+                            <input class="col form-control" type="date" id="date" name="date" placeholder="mm/dd/yyy">
+                        </div> 
+                        </div>
+                        <div class="form-group row">
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit" value="input">Search</button>
+                        </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- End of task 2 -->
+<footer class="site-footer">
 <div class="container">
     <div class="row row-content align-items-center">
         <div class="col-4 col-sm-2 offset-1">
@@ -115,8 +170,8 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
         </div>
                 <div class="col-sm-4 text-center">
-            <a role="button" class="btn btn-link" href="tel:4159604606"><i class="fa fa-phone"></i> 1-415-555-1234<br>
-            	<a role="button" class="btn btn-link" href="mailto:imunoz3@mail.ccsf.edu"><i class="fa fa-envelope-o"></i> imunoz3@mail.ccsf.edu
+                    <a role="button" class="btn btn-link" href="tel:4159604606"><i class="fa fa-phone"></i> 1-415-555-1234<br>
+                    <a role="button" class="btn btn-link" href="mailto:imunoz3@mail.ccsf.edu"><i class="fa fa-envelope-o"></i> imunoz3@mail.ccsf.edu
                 </div>
     </div>    
 </div>
